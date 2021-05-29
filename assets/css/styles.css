@@ -1,0 +1,270 @@
+@font-face {
+  font-family: "Gotham Book";
+  src: url('../fonts/Gotham/Gotham-Book.ttf');
+}
+
+@font-face {
+  font-family: "Gotham Bold";
+  src: url('../fonts/Gotham/Gotham-Bold.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body{
+  font-family: "Gotham Book";
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone {
+  width: 260px;
+  height: 530px;
+  border-radius: 36px;
+  background: #F5F5F5;
+  box-shadow: 0 0 100px 5px rgba(0,0,0, 25%), 0 0 4px 0 rgba(0,0,0,35%);
+  border: 1px solid #ccc;
+  user-select: none;
+  overflow: hidden;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  padding: 40px 12px 8px;
+  background-image: linear-gradient(90deg, rgba(186,34,14,1) 0%, rgba(185,34,23,1) 100%);
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.header h1 {
+  flex-grow: 4;
+  font-size: 20px;
+  font-family: "Gotham Bold";
+  margin: 0;
+  padding: 0;
+}
+
+.header button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+  margin: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  font-size: 14px;
+}
+
+.search {
+  width: 100%;
+  height: 40px;
+  background: white;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  color: rgba(0,0,0,.6);
+}
+
+.search p {
+  font-size: 12px;
+  margin-left: 4px;
+  flex-grow: 4;
+}
+
+.icon-search {
+  width: 18px;
+  height: 14px;
+  margin-top: -6px;
+}
+
+.icon-filter {
+  width: 18px;
+  height: 14px;
+  margin-top: -6px;
+}
+
+.list {
+  width: 100%;
+  flex-grow: 4;
+  overflow:hidden;
+  overflow-y: scroll;
+}
+
+.bottom-nav {
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+
+.tab {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav .tab {
+  color: rgba(0,0,0,.6);
+}
+
+.tab p {
+  font-size: 9px;
+  padding: 0;
+  margin: 8px 0 0;
+}
+
+.record {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  background: rgba(186,34,14,1);
+  border: 1px solid #fff;
+  box-shadow: 0 0 0px 3px rgba(186,34,14,1);
+}
+
+.tab h1 {
+  font-size: 9px;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.icon-nav {
+  width: 18px;
+  height: 14px;
+}
+
+.date-header {
+  color: rgba(0,0,0,.6);
+  padding: 16px 0 8px 12px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Gotham Bold";
+}
+
+.video-list-item {
+  width: 100%;
+  background: white;
+  margin-bottom: 1px;
+}
+
+.video-list-item.open {
+  background: #F5F5F5;
+  border-top: 1px solid rgba(0,0,0,.1);
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.video-list-item .row {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 12px;
+}
+
+.video-list-item .nav .tab {
+  color: rgba(186,34,14,1);
+}
+
+.video-column {
+  margin-right: 8px;
+}
+
+.video-column img {
+  width: 70px;
+  height: 60px;
+}
+
+.static {
+  position:absolute;
+  background: white;
+}
+
+.static:hover {
+  opacity:0;
+}
+
+.info-column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+}
+
+.date-column {
+  font-size: 10px;
+  color: rgba(0,0,0,.5);
+}
+
+.tags {
+  flex-grow: 3;
+}
+
+.info-column h5 {
+  margin: 0 0 4px;
+  padding: 0;
+}
+
+.info-column h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.comments p {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.comments svg {
+  width: 14px;
+  color: rgba(0,0,0,.6);
+  margin: -3px 4px 0 0;
+}
+
+.input {
+  padding: 4px 12px 12px;
+}
+
+.input .comments p {
+  margin: 0;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0,0,0,.2);
+}
+
+.comments svg {
+  width: 14px;
+  color: rgba(0,0,0,.6);
+  margin: -3px 4px 0 0;
+}
